@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  background-color: #ffffff;
+  background: url(../images/in_bg.jfif) no-repeat center 0;
+  background-size: cover; /* 让背景图基于容器大小伸缩 */
+  background-attachment: fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+/* 页眉区样式 */
+div#header {
+  width: 100%;
+  text-align: center;
+  /* background: url(../images/66a3272c874d41e5b9ec7562fe5822cd.jpg); */
+  /* background-color: #d4ffde; 页眉区的背景颜色 */
+  font-size: 35px;
+  color: rgb(68, 68, 68); /*文字背景颜色*/
+  font-family: FZShuTi;
+}
+
+
+#nav {
+  width: 20%;           /*设置宽度为百分比，缩小窗口时不会太丑*/
+  /* height: 100%; */
+  background: #ece7d7;
+  flex: 1;
+  font-size: larger;    /*设置字体大小*/
+  line-height: 35px;    /*设置字体行间距*/
+}
+
+.ph {
+  text-align: center;
+
+}
+
+.lo {
+  border-radius:50%;
+}
+
+/* 导航区列表样式 */
+ul {
+  list-style-type: none; /*删除导航栏的项目符号*/
+  margin: 0; /*外边距*/
+  padding: 0; /*内边距*/
+  width: 100%; /*设置宽度*/
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 鼠标悬停时改变链接颜色 */
+li a:hover {
+  background-color: #bba68d;
+  color: s;
+  text-decoration: none;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #e1dfdc;
+  padding: 10px;
+  background-image: url(../images/in_bg2.jpg);
+}
+
+/*未访问的链接*/
+a:link {
+  text-decoration: none; /*超链接无下划线*/
+}
+
+/*当用户鼠标放在链接上*/
+a:hover {
+  /* color: red; */
+  text-decoration: underline; /*鼠标放上去有下划线*/
+}
+
+.wrap {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 0 1.25em;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  gap: 10px;
+}
+
+.wrap .row {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #000000;
+}
+
+.row .col-l-4 {
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+#footer {
+  height: 60px;
+  background-color: rgb(201, 215, 229);
+}
+
+#footer p {
+  color: #000000;
+  text-align: center;
+}

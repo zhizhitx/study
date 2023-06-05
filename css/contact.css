@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  background-color: #ffc5c5;
+  background: url(../images/bg.jpg) no-repeat center 0;
+  background-size:cover;         /* 让背景图基于容器大小伸缩 */
+  background-attachment:fixed;   /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */ 
+}
+
+section {
+display: -webkit-flex;
+display: flex;
+min-height: calc(100vh - 80px);
+}
+
+
+/* 页眉区样式 */
+div#header {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(77, 147, 94);                /*文字背景颜色*/
+  font-family: STXinwei;
+}
+
+#nav {
+  width: 20%; /*设置宽度为百分比，缩小窗口时不会太丑*/
+  background: #e5d0bb;  /*背景颜色荔枝白*/
+  flex: 1;
+  font-size: larger;
+  line-height: 35px;
+}
+
+.ph {
+  text-align: center;
+
+}
+
+.lo {
+  border-radius:50%;
+}
+
+
+/* 导航区列表样式 */
+ul {
+  list-style-type: none;     /*删除导航栏的项目符号*/
+  margin: 0;                  /*外边距*/
+  padding: 0;                 /*内边距*/
+  width: 100%;               /*设置宽度*/
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 鼠标悬停时改变链接颜色 */
+li a:hover {
+  background-color: #6e3723;
+  text-decoration: none;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #b3e4b3;
+  padding: 10px;
+
+}
+
+#cont {
+  /* text-align: center; */
+  margin-left: 300px; /*让表单位置居中一点*/
+}
+
+/* 表单设置 */
+div.tableRow { 
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+  /* text-align: center; */
+	vertical-align: top;
+	padding: 3px;
+}
+div.tableRow p:first-child {
+	text-align: right;
+}
+p.heading {
+	font-weight: bold;
+}
+
+
+#footer {
+  height: 60px;
+  background-color: rgb(155, 203, 171);
+}
+
+#footer p {
+  color: #000000;
+  text-align: center;
+}
